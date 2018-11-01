@@ -1,0 +1,88 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-6
+	position: relative
+	z-index: 1
+	overflow: hidden
+	color: darken(color-get($mau,trang) ,40%)
+	+media-breakpoint-down(xs)
+		text-align: center
+	h4
+		color: color-get($mau,back)
+		text-transform: uppercase
+		position: relative
+		+fz(1rem)
+		+fw(500)
+		margin-bottom: 1.5rem
+	.linkfooter
+		padding: 3rem 0 2rem
+		color: color-get($mau,xam-1)
+		.list-group
+			.list-group-item
+				display: inline-block
+				+bg(none, none, none)
+				border: 0
+				+pad(.5rem 0)
+				+media-breakpoint-up(md)
+					+pad(.15rem 0)
+				a,p
+					font-size: 0.875rem
+					color: color-get($mau,xam-1)
+					font-weight: 300
+					text-decoration: none
+					&:hover
+						color: color-get($mau,trang)
+				.logo-wrapper
+					img
+						height: 5.1875rem
+				.social-list
+					li
+						a 
+							border: 1px solid color-get($mau,trang)
+							background: transparent
+							color: color-get($mau,la-5)
+							font-size: 1.875rem
+		.fanpage
+			text-align: left
+			iframe
+				max-width: 340px
+				width: 100%
+			+media-breakpoint-up(sm)
+				width: 100%
+	.copyright
+		+pad(1.5rem 0)
+		color: darken(color-get($mau,trang) ,30%)
+		.list-group
+			.list-group-item
+				display: inline-block
+				+bg(none, none, none)
+				border: 0
+				+pad(.5rem)
+				p,a
+					margin-bottom: 0
+					font-size: 0.875rem
+					color: color-get($mau,xam-3)
+					line-height: 25px
+				
+			+media-breakpoint-up(lg)
+				display: flex
+				.list-group-item
+					+pad(.5rem)
+					a,p
+						margin-right: calc(1rem + 1px)
+						position: relative
+						&:after
+							display: inline-flex
+							width: 1px
+							height: 100%
+							content: ''
+							+pos(abs, 0 -1rem null null)
+							background: darken(color-get($mau,trang) ,30%)
+					&:last-child
+						a
+							margin-right: 0
+							&:after
+								content: none

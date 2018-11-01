@@ -1,0 +1,43 @@
+header.canhcam-header-11
+	.k-menu-bar.container
+		#logo.mr-auto
+		#language
+		button.k-button-toggle.navbar-toggler(k-toggle-for="#demoResAllInOneMenu")
+			i.mdi.mdi-menu
+	#demoResAllInOneMenu.container.k-responsive-menu.d-lg-flex.justify-content-between.pb-0
+		.k-menu-bar
+			.k-logo.navbar-brand.mr-auto
+				img(src="./img/fresh/_global/logo.png", alt="")
+			button.k-button-toggle.navbar-toggler(k-toggle-for="#demoResAllInOneMenu")
+				i.mdi.mdi-close
+		.k-logo.navbar-brand(k-menu-map-to="#logo")
+			img(src="./img/fresh/_global/logo.png", alt="")
+		.nav.mainnav.w-100
+			.topbar
+				ul.list-inline.mb-0.d-flex
+					li.list-inline-item.search
+						.searchbox(k-menu-map-to="#search")
+							input(type="text").searchinput
+							button.searchbutton
+				ul.list-inline.mb-0(k-menu-map-to="#language")
+					li.list-inline-item
+						span Ngôn ngữ 
+					li.list-inline-item
+						a(href="#") VI
+					li.list-inline-item
+						a(href="#") EN
+
+			ul.nav
+				#search
+				li.nav-item.active
+					a.nav-link(href='#') Về Fresh Organic
+				li.nav-item
+					a.nav-link(href='#') Sản phẩm chăm sóc tóc
+				li.nav-item
+					a.nav-link(href='#') giúp tôi chọn
+				li.nav-item
+					a.nav-link(href='#') câu chuyện về tóc
+				li.nav-item
+					a.nav-link(href='#') Cửa hàng
+				#language
+

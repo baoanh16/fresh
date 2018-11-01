@@ -1,0 +1,14 @@
+{
+    "SETUP": {
+        "index": {
+            "body": [
+                "header/h-11",
+                "boxes/b-17",
+                "slider/s-home"
+            ],
+            "footer": [
+                "footer/f-6"
+            ]
+        }
+    }
+}

@@ -1,0 +1,209 @@
+@import ../../_includes
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-header-11
+	background: color-get($mau,trang)
+	box-shadow: 0 0 5px rgba(0,0,0,.5)
+	+transition(.4s all ease-in-out)
+	&.fixedheader
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 999
+		transition: all .4s ease-in-out
+		&.active , &.expand
+	.k-menu-bar
+		color: color-get($mau,main)
+		.k-button-toggle
+			color: color-get($mau,back)
+			padding-right: 0
+		.navbar-brand
+			img
+				max-height: 2rem
+		#language
+			ul 
+				li 
+					a,span
+						font-size: 0.9375rem
+						color: color-get($mau,back)
+		.nav
+			.nav-item
+				.nav-link
+					color: color-get($mau,back)
+
+	.k-responsive-menu
+		background: color-get($mau,main)
+		.navbar-brand
+			img
+				max-height: 3rem
+		.nav
+			margin-top: 1.5rem
+			.nav-item
+				.nav-link
+					color: color-get($mau,back)
+					font-size: 1.1rem
+					text-transform: uppercase
+					padding: 0.8rem 1rem
+					text-decoration: none
+				&.active, &.show
+					.nav-link
+						text-decoration: underline
+			#search
+				.searchbox
+					display: flex
+					padding: 0rem 1rem 0.5rem
+					position: relative
+					button
+						width: 30px 
+						height: 30px
+						background: transparent
+						color: color-get($mau,back)
+						border: 0
+						position: absolute
+						right: 15px
+						&:before
+							content: '\F349'
+							font-family: 'Material Design Icons'
+							+set-center()
+					input
+						height: 30px
+						width: 100%
+						padding: 0 0 0 0.5rem
+						border-radius: 25px
+						background: color-get($mau,trang)
+						border: 0
+		.k-menu-bar
+			.k-button-toggle
+				color: color-get($mau,back)
+			
+
+	// CHANGE MENU
+
+	+media-breakpoint-up(lg)
+		.k-responsive-menu
+			background: color-get($mau,trang)
+			padding-top: 0
+			padding-bottom: 1rem
+			position: relative
+			.navbar-brand
+				padding: 0
+				img 
+					max-height: 3.75rem
+					+transition(.3s all ease-in-out)
+			ul.nav
+				justify-content: flex-end
+				align-items: center
+				padding-bottom: 1rem
+				margin-top: 0
+				.nav-item
+					margin-left: 1.5rem
+					position: relative
+					.nav-link
+						font-size: 0.8125rem
+						color: color-get($mau,back) 
+						+mar(1rem 0 0 0)
+						padding: 0
+						line-height: 2rem
+						text-transform: uppercase
+						position: relative
+						text-decoration: none
+						z-index: 1
+						&:after
+							content: ''
+							position: absolute
+							width: 0
+							background: color-get($mau,main)
+							border-radius: 25px
+							height: 100%
+							left: 50%
+							transform: translateX(-50%)
+							z-index: -1
+							transition: 0.3s all ease-in-out
+					&:hover, &.active,
+						.nav-link
+							text-decoration: none
+							&:after
+								width: 120%
+								transition: 0.3s all ease-in-out
+							
+			.mainnav
+				display: flex
+				flex-direction: column
+				margin-top: 0
+				.topbar
+					justify-content: flex-end
+					display: flex
+					height: auto
+					+transition(.4s all ease-in-out)
+					margin-top: 0.5rem
+					ul 
+						li 
+							line-height: 30px
+							color: color-get($mau,back)
+							height: 30px 
+							text-align: center
+							font-size: 0.8125rem
+							a 
+								color: color-get($mau,back)
+								display: block
+								background: #f3f3f3
+								border-radius: 50%
+								width: 30px
+								text-decoration: none
+							&:hover,&.active
+								a
+									background: color-get($mau,main)
+									
+							&.search
+								padding: 0 1.5rem 0 0
+								.searchbox
+									display: flex
+									padding: 0
+									position: relative
+									button
+										width: 30px 
+										height: 30px
+										background: transparent
+										color: color-get($mau,back)
+										border: 0
+										position: absolute
+										right: 0
+										&:before
+											content: '\F349'
+											font-family: 'Material Design Icons'
+											+set-center()
+									input
+										height: 30px
+										width: 268px
+										padding: 0 0 0 0.5rem
+										border-radius: 25px
+										background: color-get($mau,main)
+										border: 0
+
+					
+		&.fixedheader
+			&.active
+				.k-responsive-menu
+					.topbar
+						height: 0px
+						overflow: hidden
+	+media-breakpoint-up(xl)
+		.k-responsive-menu
+			.navbar-brand
+				img
+					max-height: 4.5rem
+			ul.nav
+				.nav-item
+					margin-left: 2.75rem
+
+		&.fixedheader
+			&.active
+				.k-responsive-menu
+					.navbar-brand 
+						img
+							max-height: 3.75rem
+							padding: 0.5rem
