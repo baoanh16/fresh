@@ -6,7 +6,18 @@
 .home-banner
 	.list-items
 		position: relative
+		&:after
+			position: absolute
+			width: 1px
+			height: 40px
+			content: ''
+			background: color-get($mau,la-7)
+			bottom: 0
+			left: 50%
+			z-index: 3
+			transform: translateX(-50%)
 		.swiper-wrapper
+			// Swiper wrapper
 			.swiper-slide
 				min-height: 280px
 				+media-breakpoint-up(sm)
@@ -17,22 +28,23 @@
 				.title
 					position: absolute
 					text-align: left
-					width: 300px
+					width: 250px
 					+pad(0 1rem)
 					color: color-get($mau,la-1)
-					top: 50%
-					left: 10%
+					top: 40%
+					left: 0
 					transform: translateY(-50%)
 					h1,span
-						font-size: 35px
-						font-weight: 200
+						font-size: 30px
+						font-weight: 400
 						strong
-							font-size: 30px
+							font-size: 25px
 							font-weight: 500
-							color: color-get($mau,la-2)
+							color: color-get($mau,extra)
 					p 
 						color: color-get($mau,front)
 						font-weight: 400
+						font-size: 0.8125rem
 					.btn
 						background-color: color-get($mau,back)
 						font-size: 0.8125rem
@@ -47,20 +59,31 @@
 							font-size: 1rem
 							position: absolute
 							right: 10px
+				+media-breakpoint-up(sm)
+					.title
+						width: 300px
+						left: 5%
+						top: 50%
+						h1,span
+							font-size: 35px
+							font-weight: 200
+							line-height: 48px
+							strong
+								font-size: 30px
+						p 
+							font-size: 1rem
 				+media-breakpoint-up(lg)
 					.title
-						width: 390px
 						left: 20%
+						width: 390px
 						h1,span
 							font-size: 55px
-							font-weight: 200
 							strong
 								font-size: 40px
-						.btn
-							width: 75%
+		// Swiper pagination
 		.swiper-pagination
 			color: color-get($mau,la-6)
-			bottom: 5%
+			bottom: 0
 			right: 5%
 			left: auto
 			width: auto
@@ -68,15 +91,18 @@
 				font-size: 3rem
 			.swiper-pagination-total
 				font-size: 1.625rem
+			+media-breakpoint-up(sm)
+				left: auto
+				width: auto
+				bottom: 5%
+				right: 5%
 			+media-breakpoint-up(lg)
 				left: auto
 				width: auto
-				bottom: 170px
-				right: 450px
-				.swiper-pagination-current
-					font-size: 3rem
-				.swiper-pagination-total
-					font-size: 1.625rem
+				bottom: 18%
+				right: 18%
+
+		// Swiper navigation
 		.swiper-button-next,.swiper-button-prev
 			background-image: none
 			font-size: 50px
@@ -84,23 +110,43 @@
 			width: 0
 			height: auto
 			top: auto
-			bottom: auto
-		+media-breakpoint-up(md)
+			bottom: 0
+		.swiper-button-next
+			left: 40px
+		.swiper-button-prev
+			left: 2%
+
+
+
+		
+				
+
+
+
+		//Swiper wrapper reposive	
+		+media-breakpoint-up(sm)
 			.swiper-button-next,.swiper-button-prev
 				bottom: 3%
 				transform: translateX(-50%)
+			.swiper-button-next
+				left: auto
+				right: 21%
+			.swiper-button-prev
+				left: 74%
+		+media-breakpoint-up(md)
 			.swiper-button-next
 				right: 18%
 			.swiper-button-prev
 				left: 78%
 		+media-breakpoint-up(lg)
 			.swiper-button-next
-				right: 370px
-				bottom: 157px
+				right: 15.5%
+				bottom: 18%
 				left: auto
 				transform: translateX(0)
 			.swiper-button-prev
-				right: 400px
-				bottom: 157px
+				right: 17.5%
+				bottom: 18%
 				left: auto
 				transform: translateX(0)
+

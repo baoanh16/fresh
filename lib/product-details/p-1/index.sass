@@ -1,0 +1,85 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-product-detail-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(5rem 0)
+	.img-block
+		text-align: center
+		padding-top: 2.5rem
+		&:before
+			content: ''
+			position: absolute
+			background-image: url(../img/fresh/sanpham/sanpham_bg.png)
+			background-position: center center
+			background-repeat: no-repeat
+			background-size: cover
+			width: 100%
+			height: 100%
+			z-index: -1
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+		&:after
+			background: #f4f4f4
+			width: 90%
+			height: 80%
+			content: ''
+			position: absolute
+			z-index: -2
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			border-radius: 8px
+		+media-breakpoint-up(sm)
+			&:after
+				width: 350px
+				height: 372px
+	.info
+		margin-top: 1.5rem
+		h2
+			font-size: 1.875rem
+			font-weight: bold
+			line-height: 24px
+			color: color-get($mau,la-10)
+			margin-bottom: 1.5rem
+		p
+			font-size: 1rem
+			color: color-get($mau,den)
+			line-height: 30px
+			font-weight: 300
+		ul 
+			margin-bottom: 1.5rem
+			li 
+				padding: 0.5rem 1rem
+				border: 1px solid color-get($mau,la-11)
+				cursor: pointer
+				&:not(:last-child) 
+					margin-right: 1.5rem
+				a
+					color: color-get($mau,la-11)
+				&.active,&:hover
+					border: 1px solid color-get($mau,back)
+					a
+						color: color-get($mau,back)
+		.buy
+			display: flex
+			align-items: center
+			justify-content: center
+			background: linear-gradient(to right,#c0d50a 0%,#dfe282 100%)
+			color: color-get($mau,back)
+			width: 240px
+			position: relative
+			font-weight: 500
+			border-radius: 25px
+			span
+				position: absolute
+				right: 10px
+		+media-breakpoint-up(lg)
+			padding: 3rem 4.2rem
+			margin-top: 0
+			p
+				padding: 0 5rem 0 0

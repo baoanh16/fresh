@@ -1,0 +1,52 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-product-detail-2
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(3rem 0)
+	.context
+		color: color-get($mau,nau-1)
+		display: flex
+		align-items: center
+		flex-direction: column
+		.lead
+			font-weight: 300
+			p 
+				font-size: 1.25rem
+				margin-bottom: 1.5rem
+				text-align: center
+			ul
+				text-align: left
+				font-size: 0.9375rem
+				width: 85%
+				margin: 0 auto
+				margin-bottom: 1.5rem
+				li
+					position: relative
+					display: flex
+					align-items: center
+					&:not(:first-child)
+						margin-top: 0.3rem
+					&:before
+						font-family: 'Linearicons-Free'
+						content: '\e849'
+						padding-right: 1rem
+						font-size: 0.875rem
+						color: color-get($mau,back)
+		.thumb
+			margin-bottom: 1.5rem
+		.content
+			font-weight: 300
+			font-size: 1rem
+			width: 90%
+			margin: 0 auto
+			p
+				&:not(:first-child)
+					font-style: italic
+				&:not(:last-child)
+					margin-bottom: 1.5rem
+				&:last-child
+					font-size: 1.125rem

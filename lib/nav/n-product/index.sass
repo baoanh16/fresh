@@ -1,0 +1,79 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.nav-product
+	+pad(3rem 0 0)
+	h2
+		background: linear-gradient(to right, rgba(108,73,29,1) 0%,rgba(211,174,99,1) 100%)
+		-webkit-text-fill-color: transparent
+		-webkit-background-clip: text
+		font-size: 2.25rem
+		span
+			font-weight: 300
+	.menu
+		position: relative
+	ul
+		visibility: hidden
+		transition: 0.3s all ease-in-out
+		padding: 0 1rem
+		text-align: left
+		background: #52950c
+		border-radius: 0 0 18px 18px
+		z-index: 4
+		position: absolute
+		width: 100%
+		opacity: 0
+		&.show
+			visibility: visible
+			transition: 0.3s all ease-in-out
+			opacity: 1
+		li 
+			display: block
+			padding: 0.5rem 0
+			font-size: 1.2rem
+			&.active
+				a 
+					text-decoration: underline
+					
+	.toggle
+		display: flex
+		background: #52950c
+		border-radius: 18px 18px 0 0
+		justify-content: space-between
+		align-items: center
+		padding: 0.2rem 1rem
+		text-decoration: none
+		border-bottom: 1px solid white
+	+media-breakpoint-up(lg)
+		.toggle
+			display: none
+		ul 
+			visibility: visible
+			margin-top: 1.5rem
+			background: transparent
+			text-align: center
+			position: static
+			width: auto
+			opacity: 1
+			li
+				height: 36px
+				background: transparent
+				border-radius: 18px
+				border: 1px solid color-get($mau,la-9)
+				display: inline-block
+				padding: 0 1rem
+				a 
+					color: color-get($mau,back)
+					line-height: 36px
+					font-size: 0.875rem
+					font-weight: 400
+					text-decoration: none
+				&:last-child
+					@media(max-width: 992px)
+						margin-top: 0.8rem
+				&:hover,&.active
+					background: linear-gradient( to left, rgb(191,219,128) 0%, rgb(176,214,102) 0%, rgb(162,210,97) 0%, rgb(168,212,113) 0%, rgb(180,217,133) 0%, rgb(122,193,29) 0%, rgb(110,175,64) 0%, rgb(117,165,80) 0%, rgb(82,194,23) 0%, rgb(78,147,12) 0%, rgb(103,177,16) 100%)
+					a 
+						color: color-get($mau,trang)

@@ -1,0 +1,85 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+.canhcam-home-6
+	padding: 4rem 0 2rem
+	h2
+		background: linear-gradient(to right, rgba(108,73,29,1) 0%,rgba(211,174,99,1) 100%)
+		-webkit-text-fill-color: transparent
+		-webkit-background-clip: text
+		font-size: 2.25rem
+		text-align: center
+		margin-bottom: 2rem
+		span
+			font-weight: 300
+	.news-list
+		margin-top: 0.5rem
+		.owl-nav
+			font-size: 2.5rem
+			display: flex
+			justify-content: space-between
+			width: 100%
+			position: absolute
+			top: 50%
+			transform: translateY(-150%)
+			margin-top: 0
+			+media-breakpoint-up(md)
+				width: 120%
+				transform: translateY(-110%) translateX(-8.5%)
+			+media-breakpoint-up(lg)
+				width: 110%
+				transform: translateY(-110%) translateX(-4.5%)
+		.owl-prev,.owl-next
+			&:focus,&:hover
+				outline: none
+				background: transparent
+				color: color-get($mau,back)
+			
+				
+
+
+
+
+
+		.owl-item
+			display: flex
+			justify-content: center
+			.item
+				display: flex
+				text-decoration: none
+				height: 100%
+				overflow: hidden
+				figure
+					position: relative
+					overflow: hidden
+					margin-bottom: 1.5rem
+					img
+					figcaption
+						padding: 1rem 0 0
+						h3
+							+fz(0.9375rem)
+							color: color-get($mau,den)
+							margin-bottom: 0
+							padding-bottom: 0.8rem
+							border-bottom: 1px dashed #e1e1e1
+					p 
+						display: flex
+						align-items: center
+						justify-content: space-between
+						font-size: 0.8125rem
+						padding-top: 0.8rem
+						time
+							color: #555555
+						span
+							display: flex
+							align-items: center
+							color: #222222
+							em
+								padding-left: 0.4rem
+				&:hover
+					figure
+						img
+							+opacity(.7)
+							background: darken(color-get($mau,trang) ,7%)

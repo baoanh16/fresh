@@ -1,0 +1,102 @@
+@import ../../_includes
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.helpdesk-intro
+	.banner
+		position: relative
+		min-height: 220px
+		border-bottom: 1px solid #ccd9d4
+		background-position: center center
+		background-size: cover
+		background-image: url(../img/fresh/tuvan/tuvan_bg_sm.png)
+		+media-breakpoint-up(sm)
+			min-height: 450px
+			background-image: url(../img/fresh/tuvan/tuvan_bg.png)
+		+media-breakpoint-up(lg)
+			min-height: 680px
+			padding-bottom: 92px
+		.title
+			max-width: 280px
+			text-align: center
+			margin: 0 auto
+			padding: 2rem 0 0
+			h1
+				color: color-get($mau,la-1)
+				font-weight: 200
+				margin-bottom: 1rem
+				font-size: 2rem
+			p
+				color: color-get($mau,front)
+				font-size: 1rem
+				font-weight: 400
+			+media-breakpoint-up(sm)
+				position: absolute
+				transform: translateY(-50%)
+				max-width: 240px
+				text-align: right
+				right: 8%
+				top: 32%
+				left: auto
+				margin: 0
+				padding: 0
+				p
+					padding: 0 0 0 1.2rem
+			+media-breakpoint-up(md)
+				min-width: 300px
+				h1
+					font-size: 2.5rem
+				p
+					font-size: 1rem
+			+media-breakpoint-up(lg)
+				max-width: 350px
+				right: 10%
+				top: 35%
+				h1
+					font-size: 3.125rem
+					margin-bottom: 2rem
+				p
+					font-size: 1.5rem
+			+media-breakpoint-up(xl)
+				right: 20%
+				top: 36%
+
+
+
+		.button
+			top: 100%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+			position: absolute
+			.btn-more
+				background: linear-gradient(to left, rgba(223,226,131,1) 0%,rgba(192,213,10,1) 100%) 
+				border: 0
+				border-radius: 25px
+				color: color-get($mau,back)
+				font-size: 0.9375rem
+				text-transform: uppercase
+				padding: 0.5rem 3rem
+				font-weight: 600
+				position: relative
+				transition: 0.3s all linear
+				span
+					position: absolute
+					right: 10px
+					top: 50%
+					transform: translateY(-50%)
+					font-size: 1rem
+			+media-breakpoint-up(sm)
+				right: 8%
+				top: 58.7%
+				left: auto
+				transform: translateX(0) translateY(-50%)
+			+media-breakpoint-up(lg)
+				right: 10%
+			+media-breakpoint-up(xl)
+				right: 20%
+		
+	.img-block
+		width: 280px
+		margin: 1rem auto

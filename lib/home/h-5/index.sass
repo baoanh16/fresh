@@ -1,0 +1,91 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+.canhcam-home-5
+	padding: 4rem 0 2rem
+	background: #f5f9fd
+	h2
+		background: linear-gradient(to right, rgba(108,73,29,1) 0%,rgba(211,174,99,1) 100%)
+		-webkit-text-fill-color: transparent
+		-webkit-background-clip: text
+		font-size: 2.25rem
+		text-align: center
+		margin-bottom: 2rem
+		span
+			font-weight: 300
+	.feedback
+		.owl-nav
+			font-size: 2.5rem
+			+media-breakpoint-up(lg)
+				display: flex
+				flex-direction: column-reverse
+				position: absolute
+				top: 50%
+				transform: translatey(-50%)
+				right: 11.5%
+				margin-top: 0
+		.owl-prev,.owl-next
+			&:focus,&:hover
+				outline: none
+				background: transparent
+				color: color-get($mau,back)
+		.owl-item
+			display: flex
+			justify-content: center
+			.item
+				figure
+					display: flex
+					flex-direction: column
+					align-items: center
+					position: relative
+					background: color-get($mau,trang)
+					border-radius: 15px
+					padding: 2rem 0
+					.img-block
+						border-radius: 50%
+						box-shadow: 0 0 0 8px #fff
+						overflow: hidden
+						width: 180px
+						height: 180px
+						position: static
+					figcaption
+						padding: 2rem
+						background-image: url(../img/fresh/home/home_quote_mark.png)
+						background-repeat: no-repeat
+						background-position: 98% -10%
+						h3
+							font-size: 1.25rem
+							text-transform: uppercase
+							color: color-get($mau,xam-1)
+						span 
+							font-size: 1.125rem
+							color: #999999
+						h4
+							font-size: 1.125rem
+							font-weight: 600
+							color: color-get($mau,xam-1)
+							margin-top: 1.2rem
+						p
+							font-size: 0.9375rem
+							color: color-get($mau,xam-1)
+				+media-breakpoint-up(md)
+					figure
+						flex-direction: row
+						padding: 0
+						.img-block
+							transform: translateX(10%)
+							top: 37px
+							position: absolute
+						figcaption
+							padding: 2.5rem 2rem 2rem 14rem
+				+media-breakpoint-up(lg)
+					figure
+						.img-block
+							width: 210px
+							height: 210px
+							transform: translateX(-50%) translateY(-50%)
+							top: 50%
+						figcaption
+							padding: 3rem 6rem 3rem 10rem

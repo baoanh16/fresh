@@ -4,31 +4,29 @@
 //////////////////////////////////////
 
 .canhcam-breadcrumb-4
-	+pad(2rem 0)
-	.main-breadcrumb
-		width: 100%
-		display: none
-		+media-breakpoint-up(md)
-			display: block
-		.breadcrumb
-			margin-bottom: 0
-			+bor-rad(0)
-			+pad(0)
+	background: #014226
+	.breadcrumb
+		margin-bottom: 0
+		+bor-rad(0)
+		+pad(0)
+		position: relative
+		background: transparent
+		li
+			+pad(.5rem)
 			position: relative
-			background: none
-			.breadcrumb-item
-				+pad(.5rem)
-				position: relative
-				line-height: 1.5rem
-				color: darken(color-get($mau,trang),50%)
-				display: flex
-				align-items: center
-				a
+			line-height: 1.5rem
+			color: darken(color-get($mau,trang),50%)
+			display: flex
+			align-items: center
+			font-family: 'Quicksand',sans-serif
+			font-weight: 400
+			font-size: 0.8125rem
+			a
+				color: color-get($mau,main)
+			+ li
+				&:before
 					color: color-get($mau,main)
-				+ .breadcrumb-item
-					&:before
-						color: color-get($mau,main)
-						content: '\e876'
-						font-family: 'Linearicons-Free'
-						line-height: 1
-						overflow: hidden
+					content: '|'
+					line-height: 1
+					overflow: hidden
+					padding-right: 1rem

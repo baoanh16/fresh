@@ -1,5 +1,6 @@
 @import ../_includes
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=vietnamese')
 // +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
 
 html, body
@@ -17,8 +18,10 @@ h1, h2, h3, h4, h5, h6
 
 a
 	color: color-get($mau,main)
+	text-decoration: none
 	&:hover
 		color: color-get($mau,extra)
+		text-decoration: none
 	&:visited, &:active
 		color: color-get($mau,main)
 
@@ -81,6 +84,8 @@ header
 				color: color-get($mau,trang)
 			&:focus
 				+box-sha(0 0 0 0.2rem rgba(red(color-get($mau,main)),green(color-get($mau,main)),blue(color-get($mau,main)),.25))
+main
+	position: relative
 
 .pagination
 	.page-item
@@ -212,5 +217,15 @@ header
 					+pos(abs, -20px 1.2rem null initial)
 				&:after
 					+pos(abs, -19px 1.2rem null initial)
-
+.section-with-line
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		width: 1px
+		height: 40px
+		background: #96793b
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
 

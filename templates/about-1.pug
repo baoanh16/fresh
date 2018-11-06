@@ -1,0 +1,18 @@
+extends _layout/layout.pug
+block variables
+	- var title = "index"
+	- var description = "Description for index page"
+	- var bodyclass = "index"
+	- var href = "/about-1.html"
+	
+block header
+	include ../lib/header/h-11/index.pug
+block body
+	include ../lib/slider/s-page/index.pug
+	include ../lib/breadcrumb/b-4/index.pug
+	include ../lib/nav/n-about/index.pug
+	include ../lib/about/a-1/index.pug
+	include ../lib/home/h-7/index.pug
+	
+block footer
+	include ../lib/footer/f-6/index.pug

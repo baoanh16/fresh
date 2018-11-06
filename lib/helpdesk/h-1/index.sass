@@ -1,0 +1,101 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.helpdesk-step
+	padding: 0 0 3rem 0
+	.banner
+		min-height: 120px
+		position: relative
+		.step-number
+			position: absolute
+			left: 50%
+			bottom: -31px
+			transform: translateX(-50%)
+			width: 100%
+			text-align: center
+			ul
+				margin-bottom: 0
+				li
+					a
+						height: 40px
+						display: flex
+						background: color-get($mau,back)
+						color: color-get($mau,la-11)
+						border: 1.5px solid #fff
+						font-family: 'Quicksand', sans-serif
+						font-weight: 400
+						justify-content: center
+						align-items: center
+						&.active,&:hover
+							color: color-get($mau,back)
+							background: color-get($mau,la-11)
+					&:not(:last-child)
+						+media-breakpoint-up(sm)
+							margin-right: 2.25rem
+						a
+							width: 40px
+							border-radius: 50%
+							font-size: 1.3rem
+					&:last-child
+						a
+							width: 98px
+							border-radius: 20px
+							font-size: 0.9rem
+						
+	.content
+		padding: 4.5rem 0
+		.selection
+			+media-breakpoint-up(lg)
+				padding: 0 9rem
+		h1
+			text-align: center
+			font-size: 1.8rem
+			font-weight: 300
+			color: color-get($mau,back)
+			+media-breakpoint-up(sm)
+				padding: 0 2rem
+				font-size: 2.2rem
+			+media-breakpoint-up(md)
+				font-size: 2.75rem
+		.item
+			figure
+				margin-top: 2.5rem
+				display: flex
+				justify-content: center
+				align-items: center
+				position: relative
+				.img-block
+					border-radius: 50%
+					overflow: hidden
+					width: 65px
+					height: 65px
+				figcaption
+					padding-left: 1rem
+					font-weight: 300
+					font-size: 1.5rem
+					color: #8b9d94
+			&.active
+				figure
+					.img-block
+						box-shadow: 0px 0px 0px 2px rgba(201,241,0,1)
+	.button
+		text-align: center
+		.btn-more
+			background: linear-gradient(to left, rgba(223,226,131,1) 0%,rgba(192,213,10,1) 100%) 
+			border: 0
+			border-radius: 25px
+			color: color-get($mau,back)
+			font-size: 0.9375rem
+			text-transform: uppercase
+			padding: 0.6rem 5rem
+			font-weight: 600
+			position: relative
+			transition: 0.3s all linear
+			span
+				position: absolute
+				right: 10px
+				top: 50%
+				transform: translateY(-50%)
+				font-size: 1rem

@@ -1,0 +1,43 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-7
+	padding: 4rem 0 2rem
+	h2
+		font-size: 1.125rem
+		font-weight: 600
+		text-transform: uppercase
+		color: color-get($mau,front)
+	p
+		font-size: 0.875rem
+		font-weight: 300
+		color: color-get($mau,extra)
+	.subscribefrm
+		position: relative
+		.subscribeemail
+			width: 100%
+			height: 50px
+			border-radius: 5px
+			background: #173701
+			border: 0
+			font-size: 0.8125rem
+			padding-left: 1rem
+		.subscribebutton
+			position: absolute
+			right: 0
+			top: 0
+			height: 100%
+			border-radius: 0 5px 5px 0
+			width: 60px
+			border: 0
+			background-image: linear-gradient( to bottom, #d0e77e 0%, #98bc86 100%)
+			color: color-get($mau,back)
+			&:after
+				content: '\e87a'
+				position: absolute
+				font-family: 'Linearicons-Free'
+				top: 50%
+				left: 50%
+				transform: translateX(-50%) translateY(-50%)

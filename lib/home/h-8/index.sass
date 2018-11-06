@@ -1,0 +1,130 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-product
+	+pad(0 0 2rem)
+	+media-breakpoint-up(lg)
+		+pad(0 0 3rem)
+	.item
+		margin-top: 2.1rem
+		width: 350px
+		h3 
+			font-size: 1rem
+			text-align: center
+			color: color-get($mau,den)
+			font-weight: 400
+			margin-top: 0.5rem
+			padding: 0 1rem
+		figure
+			position: relative
+			display: flex
+			margin: 0px
+			max-width: 100%
+			overflow: hidden
+			width: 100%
+			height: 400px
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background: #f4f4f4
+			border-radius: 8px
+			cursor: pointer
+			.img-block
+				position: absolute
+				z-index: 1
+				img
+					vertical-align: top
+			&:before
+				content: ''
+				position: absolute
+				background-image: url(../img/fresh/sanpham/sanpham_bg.png)
+				background-position: center center
+				background-repeat: no-repeat
+				background-size: cover
+				width: 100%
+				height: 100%
+				z-index: 0
+			figcaption
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				display: flex
+				flex-direction: column
+				justify-content: center
+				text-align: center
+				background-image: linear-gradient( to top, rgba(1,66,38,0.949) 0%, rgba(104,189,64,0.949) 100%)
+				opacity: 0
+				width: 100%
+				height: 100%
+				transition: 0.3s all ease-in-out
+				z-index: 2
+				h2
+					color: color-get($mau,trang)
+					font-size: 1rem
+					font-weight: 600
+				p 
+					font-weight: 400
+					font-size: 1rem
+					color: color-get($mau,front)
+					padding: 0 2.5rem
+				.btn 
+					width: 50%
+					margin: 0 auto
+					border-radius: 20px
+					background: linear-gradient( to bottom, rgb(129,195,48) 0%, rgb(74,153,56) 100%) !important
+					border: 0
+					position: relative
+					color: color-get($mau,back) !important
+					font-weight: 500 !important
+					em
+						position: absolute
+						right: 10px
+						top: 50%
+						transform: translateY(-50%)
+			.link
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				z-index: -1
+				display: none
+			&:hover
+				figcaption
+					opacity: 1
+					transition: 0.3s all ease-in-out
+			+media-breakpoint-up(lg)
+				.link
+					display: block
+					z-index: 3
+				&:hover
+					figcaption
+						opacity: 1
+						transition: 0.3s all ease-in-out
+	.more
+		margin: 2rem auto 0
+		.btn
+			background-image: linear-gradient( to bottom, #a3ce2f 0%, #6ca436 100%)
+			height: 45px
+			border-radius: 22.5px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 0 1rem
+			color: color-get($mau,back)
+			span
+				&:first-child
+					font-size: 0.9375rem
+					em 
+						font-style: normal
+						font-size: 0.875rem
+				&:last-child
+					width: 100px
+					text-align: right
+					@media (max-width: 576px)
+						width: 60px
+

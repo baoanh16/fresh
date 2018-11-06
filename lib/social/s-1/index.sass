@@ -1,0 +1,47 @@
+// Social list	
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-sociallist
+	position: fixed
+	top: 65%
+	transform: translateY(-50%)
+	left: 7%
+	z-index: 3
+	ul
+		li
+			margin-top: 0.5rem
+			a
+				display: block
+				font-size: 1rem
+				width: 30px
+				height: 30px
+				line-height: 30px
+				background: color-get($mau,la-8)
+				border-radius: 50%
+				text-align: center
+	&:before
+		position: absolute
+		width: 1px
+		height: 200px
+		content: ''
+		background: color-get($mau,la-2)
+		top: -250px
+		left: 50%
+		z-index: 3
+		transform: translateX(-50%)
+		opacity: 0.3
+	&:after
+		position: absolute
+		width: 1px
+		height: 200px
+		content: ''
+		background: color-get($mau,la-2)
+		bottom: -250px
+		left: 50%
+		z-index: 3
+		transform: translateX(-50%)
+		opacity: 0.3
+	+media-breakpoint-down(md)
+		display: none

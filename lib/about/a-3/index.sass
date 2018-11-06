@@ -1,0 +1,68 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.about-3
+	h2 
+		text-align: center
+		width: 100%
+		color: color-get($mau,xam-1)
+		font-size: 1.125rem
+		font-weight: 300
+		margin: 0 auto 3rem
+		padding: 0 0.8rem
+		+media-breakpoint-up(lg)
+			width: 70%
+	.material
+		figure
+			align-items: center
+			margin-top: 1rem
+			@media (max-width: 576px)
+				margin-top: 0.5rem
+			figcaption
+				h3 
+					font-size: 1.875rem
+					color: #b37045
+					font-weight: bold
+					line-height: 34px
+					@media(max-width: 576px)
+						font-size: 1.5rem
+						text-align: center
+						margin-top: 0.5rem
+				p
+					margin-bottom: 0
+					font-size: 0.875rem
+					font-weight: 300
+					color: color-get($mau,back)
+					text-align: justify
+					line-height: 24px
+
+	.chemical
+		margin-top: 3rem
+		@media (min-width: 576px)
+			margin-top: 7rem
+		figure
+			align-items: flex-start
+			margin-top: 1.2rem
+			@media (max-width: 576px)
+				margin-top: 0.5rem
+			figcaption
+				h3 
+					font-size: 1.875rem
+					font-weight: 300
+					line-height: 34px
+					background: linear-gradient(to right, rgba(149,64,233,1) 0%,rgba(198,66,110,1) 100%)
+					-webkit-text-fill-color: transparent
+					-webkit-background-clip: text
+					@media(max-width: 576px)
+						font-size: 1.5rem
+						text-align: center
+						margin-top: 0.5rem
+				p
+					margin-bottom: 0
+					font-size: 0.875rem
+					font-weight: 300
+					color: color-get($mau,back)
+					text-align: justify
+					line-height: 24px

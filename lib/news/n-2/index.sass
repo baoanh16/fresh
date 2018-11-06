@@ -4,15 +4,27 @@
 //////////////////////////////////////
 
 .canhcam-news-2
-	+pad(2rem 0)
+	+pad(4rem 0 2rem)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	.news-tagline
+		margin-bottom: 1.5rem
+		h2
+			background: linear-gradient(to right, rgba(108,73,29,1) 0%,rgba(211,174,99,1) 100%)
+			-webkit-text-fill-color: transparent
+			-webkit-background-clip: text
+			font-size: 2.25rem
+			margin-bottom: 1.5rem
+			span
+				font-weight: 300
+		p 
+			font-size: 0.8125rem
+			color: #555555
 	.news-hot
 		figure
 			position: relative
-			margin-bottom: 2rem
+			margin-bottom: 1.5rem
 			overflow: hidden
-			+bor-rad(5px)
 			img
 				width: 100%
 			.item
@@ -31,107 +43,79 @@
 				h3
 					+fz(1.2rem)
 					+fw(300)
-				time
-					+fz(.9rem)
-					+fw(200)
-					color: darken(color-get($mau,whites) ,10%)
-				&:after
-					content: ''
-					+pos(abs, null 0 0 null)
-					width: 100%
-					height: 50%
-					z-index: -1
-					+transition(ease-in-out all .15s)
-					+opacity(0)
-					background: rgba(0,0,0,.5)
-					background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)
-					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
-					background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
-					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0)
-			&:hover
-				figcaption
-					&:after
-						+opacity(1)
-						height: 100%
 		.top-list
 			.item
 				+media-breakpoint-up(lg)
 					figure
 						margin-bottom: 0
+						min-height: 420px
+						img
+							height: 100%
 
 		.part-list
 			.item
 				figure
+					margin-bottom: 1.5rem
+					align-items: center
+					.img-block
+						height: 100%
 					figcaption
-						+pad(.5rem 1rem)
+						+pad(.5rem)
+						position: static
+						display: block
+						height: auto
 						h3
-							+fz(1rem)
-						time
-							+fz(.8rem)
-	.news-list
-		.btn-group
-			i
-				padding-right: 5px
-		.list-group-wrapper
-			flex-direction: column
-			> div
-				-webkit-box-flex: 0
-				-webkit-flex: 0 0 100%
-				-ms-flex: 0 0 100%
-				flex: 0 0 100%
-				max-width: 100%
-				figure
-					display: block
-					+media-breakpoint-up(md)
-						+clearfix
-						img
-							max-width: 30%
-							float: left
-							+bor-rad(5px 0 0 5px)
+							+fz(0.9375rem)
+							color: #666666
+							text-shadow: none
+							font-weight: 400
+			+media-breakpoint-up(lg)
+				.item
+					figure
 						figcaption
-							max-width: 70%
-							float: left
-							padding-left: 1rem
-
+							+pad(.5rem 0)
+			+media-breakpoint-up(lg)
+				.item
+					figure
+						margin-bottom: 0
+	.news-list
+		margin-top: 0.5rem
 		.item
 			display: flex
 			text-decoration: none
 			height: 100%
-			+bor-rad(5px)
 			overflow: hidden
 			figure
 				position: relative
 				overflow: hidden
-				+bor-rad(5px)
-				margin-bottom: 2rem
-				background: darken(color-get($mau,trang) ,3%)
+				margin-bottom: 1.5rem
 				img
-					+bor-rad(5px 5px 0 0)
 				figcaption
-					padding: 1rem
-
+					padding: 1rem 0 0
 					h3
-						+fz(1.1rem)
-						+fw(400)
-						color: color-get($mau,main)
-					time
-						+fz(.9rem)
-						+fw(200)
-						color: darken(color-get($mau,trang) ,30%)
-					p
-						color: darken(color-get($mau,trang) ,60%)
-						line-height: 1.3rem
-						+fz(1rem)
+						+fz(0.9375rem)
+						color: color-get($mau,den)
 						margin-bottom: 0
+						padding-bottom: 0.8rem
+						border-bottom: 1px dashed #e1e1e1
+				p 
+					display: flex
+					align-items: center
+					justify-content: space-between
+					font-size: 0.8125rem
+					padding-top: 0.8rem
+					time
+						color: #555555
+					span
+						display: flex
+						align-items: center
+						color: #222222
+						em
+							padding-left: 0.4rem
+								
+							
 			&:hover
 				figure
-					background: darken(color-get($mau,trang) ,7%)
 					img
 						+opacity(.7)
-					figcaption
-						h3
-							color: darken(color-get($mau,extra),0%)
-						time
-							color: darken(color-get($mau,trang) ,20%)
-						p
-							color: darken(color-get($mau,trang) ,70%)
+						background: darken(color-get($mau,trang) ,7%)

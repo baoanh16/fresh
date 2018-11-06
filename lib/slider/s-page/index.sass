@@ -1,0 +1,96 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.page-banner
+	.list-items
+		position: relative
+		.swiper-wrapper
+			// Swiper wrapper
+			.swiper-slide
+				min-height: 280px
+				+media-breakpoint-up(sm)
+					min-height: 320px
+				+media-breakpoint-up(lg)
+					min-height: 450px
+				.title
+					position: absolute
+					text-align: right
+					width: 310px
+					+pad(0 1rem)
+					color: color-get($mau,la-1)
+					top: 40%
+					right: 0
+					transform: translateY(-50%)
+					h1,span
+						font-size: 1.875rem
+						font-weight: 400
+					p 
+						color: color-get($mau,front)
+						font-weight: 400
+						font-size: 0.8125rem
+					.btn
+						background: linear-gradient(to right,#c0d50a 0%,#dfe282 100%)
+						font-size: 0.8125rem
+						display: flex
+						align-items: center
+						justify-content: center
+						color: color-get($mau,back)
+						border-radius: 25px
+						width: 50%
+						position: relative
+						margin-left: 50%
+						padding: 0.5rem 0.75rem
+						text-transform: uppercase
+						font-weight: 500
+						span
+							font-size: 1rem
+							position: absolute
+							right: 10px
+				+media-breakpoint-up(sm)
+					.title
+						width: 443px
+						right: 10%
+						top: 55%
+						h1,span
+							font-weight: 300
+							line-height: 48px
+						p 
+							font-size: 1rem
+				+media-breakpoint-up(lg)
+					.title
+						left: auto
+						right: 20%
+		// Swiper navigation
+		.swiper-button-next,.swiper-button-prev
+			background-image: none
+			font-size: 50px
+			color: color-get($mau,extra)
+			width: 0
+			height: auto
+			top: auto
+			bottom: 0
+		.swiper-button-next
+			left: 55px
+		.swiper-button-prev
+			left: 20px
+		+media-breakpoint-up(lg)
+			.swiper-button-next,.swiper-button-prev
+				transform: translateX(-50%)
+			.swiper-button-next
+				left: auto
+				right: 150px
+			.swiper-button-prev
+				right: 180px
+				left: auto
+		+media-breakpoint-up(xl)
+			.swiper-button-next
+				right: 150px
+				left: auto
+				transform: translateX(0)
+			.swiper-button-prev
+				right: 180px
+				left: auto
+				transform: translateX(0)
+
