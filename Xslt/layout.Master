@@ -1,0 +1,231 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+<!--
+/////////////////////////////////////////////////////////////////////////
+
+.$$$$$$\...$$$$$$\..$$\...$$\.$$\...$$\..$$$$$$\...$$$$$$\..$$\......$$\
+$$..__$$\.$$..__$$\.$$$\..$$.|$$.|..$$.|$$..__$$\.$$..__$$\.$$$\....$$$.|
+$$./..\__|$$./..$$.|$$$$\.$$.|$$.|..$$.|$$./..\__|$$./..$$.|$$$$\..$$$$.|
+$$.|......$$$$$$$$.|$$.$$\$$.|$$$$$$$$.|$$.|......$$$$$$$$.|$$\$$\$$.$$.|
+$$.|......$$..__$$.|$$.\$$$$.|$$..__$$.|$$.|......$$..__$$.|$$.\$$$..$$.|
+$$.|..$$\.$$.|..$$.|$$.|\$$$.|$$.|..$$.|$$.|..$$\.$$.|..$$.|$$.|\$../$$.|
+\$$$$$$..|$$.|..$$.|$$.|.\$$.|$$.|..$$.|\$$$$$$..|$$.|..$$.|$$.|.\_/.$$.|
+.\______/.\__|..\__|\__|..\__|\__|..\__|.\______/.\__|..\__|\__|.....\__|
+
+Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn
+156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.
+Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn
+Facebook: https://fb.com/canhcam.vn
+
+/////////////////////////////////////////////////////////////////////////
+-->
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+
+<head id="Head1" runat="server">
+	<title></title>
+	<portal:MetaContent ID="MetaContent" runat="server" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;amp;subset=vietnamese">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i">
+	<!-- ////////////// Favicon ////////////// -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color">
+	<!-- ////////////// Mobile title color ////////////// -->
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+	<!-- ////////////// Responsive Config ////////////// -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+	<!--if lt IE 9
+script(src='//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
+-->
+	<style>.fancybox-type-iframe{min-height:560px;z-index:9999;background:#fff;box-shadow:0 0 6px rgba(0,0,0,.5);border-radius:3px}.fancybox-type-iframe .fancybox-skin, .fancybox-outer, .fancybox-inner{min-height:560px;}.fancybox-type-iframe iframe{width:100%;min-height:560px}.cmsadminpanel .canhcamcmslistmenu{margin:0;padding:0;display:flex;align-items:center;justify-content:center;}.cmsadminpanel .canhcamcmslistmenu li{list-style-type:none}.cmsadminpanel .canhcamcmslistmenu li a{border:0;text-decoration:none}.cmsadminpanel .canhcamcmslistmenu li a:hover,.cmsadminpanel .canhcamcmslistmenu li a:focus{background:none}.cmsadminpanel .canhcamcmslistmenu .ddviewmode{margin-top:0}@media only screen and (max-width:700px) {.cmsadminpanel .canhcamcmslistmenu{flex-direction:column}}</style>
+	<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="false" />
+	<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
+	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+</head>
+
+<body id="Body" runat="server" class="canhcam">
+	<div id="top-page"></div>
+	<portal:FacebookSdk ID="fbsdk" runat="server" />
+	<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+	<form id="frmMain" runat="server">
+		<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+		<!-- ////////////// Header ////////////// -->
+		<div id="wrapper">
+			<header class="canhcam-header-11">
+				<div class="k-menu-bar container">
+					<div class="mr-auto" id="logo"></div>
+					<div id="language"></div>
+					<button class="k-button-toggle navbar-toggler" k-toggle-for="#demoResAllInOneMenu"><i class="mdi mdi-menu"></i></button>
+				</div>
+				<div class="container k-responsive-menu d-lg-flex justify-content-between pb-0" id="demoResAllInOneMenu">
+					<div class="k-menu-bar">
+						<div class="k-logo navbar-brand mr-auto">
+							<portal:ModuleWrapper ID="mdl215" runat="server" ConfigureModuleId="215" />
+						</div>
+						<button class="k-button-toggle navbar-toggler" k-toggle-for="#demoResAllInOneMenu"><i class="mdi mdi-close"></i></button>
+					</div>
+					<div class="k-logo navbar-brand" k-menu-map-to="#logo">
+						<portal:ModuleWrapper ID="mdl216" runat="server" ConfigureModuleId="216" />
+					</div>
+					<div class="nav mainnav w-100">
+						<div class="topbar">
+							<ul class="list-inline mb-0 d-flex">
+								<li class="list-inline-item search">
+									<div class="searchbox" k-menu-map-to="#search">
+										<portal:ModuleWrapper ID="mdl221" runat="server" ConfigureModuleId="221" />
+									</div>
+								</li>
+							</ul>
+							<portal:ModuleWrapper ID="mdl220" runat="server" ConfigureModuleId="220" />
+						</div>
+						<portal:ModuleWrapper ID="mdl218" runat="server" ConfigureModuleId="218" />
+					</div>
+				</div>
+			</header>
+			<!-- ////////////// End Header ////////////// -->
+			<!-- ////////////// Main ////////////// -->
+			<main>
+				<asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="leftContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="mainContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="rightContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+			</main>
+			<!-- ////////////// End Main ////////////// -->
+			<!-- ////////////// Footer ////////////// -->
+			<footer class="canhcam-footer-6">
+				<div class="linkfooter border-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-lg-3 px-5 px-sm-0">
+								<nav class="list-group">
+									<div class="list-group-item">
+										<div class="logo-wrapper text-left">
+											<portal:ModuleWrapper ID="mdl225" runat="server" ConfigureModuleId="225" />
+										</div>
+									</div>
+									<div class="list-group-item">
+										<ul class="list-inline social-list my-0 text-left">
+											<portal:ModuleWrapper ID="mdl226" runat="server" ConfigureModuleId="226" />
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="col-sm-6 col-lg-3 mt-3 mt-md-0 px-5 px-sm-0">
+								<h4 class="text-left mb-2">Danh mục sản phẩm</h4>
+								<portal:ModuleWrapper ID="mdl227" runat="server" ConfigureModuleId="227" />
+							</div>
+							<div class="col-sm-6 col-lg-2 mt-3 mt-lg-0 px-5 px-sm-0">
+								<h4 class="text-left mb-2">Liên kết nhanh</h4>
+								<portal:ModuleWrapper ID="mdl228" runat="server" ConfigureModuleId="228" />
+							</div>
+							<div class="col-md-6 col-lg-4 mt-3 mt-lg-0 px-5 px-sm-0">
+								<div class="fanpage">
+									<portal:ModuleWrapper ID="mdl229" runat="server" ConfigureModuleId="229" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="container">
+						<div class="row justify-content-center">
+								<portal:ModuleWrapper ID="mdl230" runat="server" ConfigureModuleId="230" />
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- ////////////// End Footer ////////////// -->
+		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav>
+						<ul class="canhcamcmslistmenu listmenu">
+							<portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true" runat="server" />
+							<portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open" RenderAsListItem="true" runat="server" />
+							<portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog" RenderAsListItem="true" runat="server" />
+							<portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+							<portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true" runat="server" />
+							<portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
+							<li>
+								<asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+								</asp:ContentPlaceHolder>
+							</li>
+						</ul>
+						<ul class="canhcamcmslistmenu">
+							<li>
+								<a href="#" id="pullmenucms">
+									<i class="fa fa-chevron-circle-right"></i>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</portal:AutoHidePanel>
+		<portal:Woopra ID="woopra11" runat="server" />
+	</form>
+	<!-- ////////////// Back to Top ////////////// -->
+	<a href="#top-page" id="back-to-top" title="Back to top">
+		<span>TOP</span>
+		<i class="fa fa-angle-up"></i>
+	</a>
+	<!-- ////////////// Javascript Include ////////////// -->
+	<script src="/Data/Sites/1/skins/default/js/core.js?v=1.0.0"></script>
+	<script src="/Data/Sites/1/skins/default/js/plugins.js?v=1.0.0"></script>
+	<script src="/Data/Sites/1/skins/default/js/app.js?v=1.0.0"></script>
+	<script type="text/javascript">
+		function HideToolbar() {
+			$(".cmsadminpanel").addClass("toggled"), $(".fa-chevron-circle-right").addClass("fa-rotate-180")
+		}
+
+		function ShowToolbar() {
+			$(".cmsadminpanel").removeClass("toggled"), $(".fa-chevron-circle-right").removeClass("fa-rotate-180")
+		}
+		$(document).ready(function () {
+			$("#pullmenucms").click(function (o) {
+				o.preventDefault(), $(this).parents(".cmsadminpanel").hasClass("toggled") ? (ShowToolbar(), Set_Cookie(
+					"toolbarOpenState", "open")) : (HideToolbar(), Set_Cookie("toolbarOpenState", "closed"))
+			});
+			var o = Get_Cookie("toolbarOpenState");
+			null != o && ("closed" == o && HideToolbar(), "open" == o && ShowToolbar())
+		});
+
+	</script>
+</body>
+
+</html>

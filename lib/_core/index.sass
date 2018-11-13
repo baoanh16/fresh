@@ -228,4 +228,86 @@ main
 		top: 0
 		left: 50%
 		transform: translateX(-50%)
+.pages
+	text-align: center
+	.modulepager
+		.pagination
+			display: block
+			margin: 0
+			padding: 1.5rem 0 2rem
+			li
+				list-style: none
+				display: inline-block
+				text-align: center
+				margin-left: .5rem
+				&:first-child
+					margin-left: 0
+				a,span
+					width: 35px
+					height: 35px
+					justify-content: center
+					align-items: center
+					display: flex
+					color: color-get($mau,back)
+					background: color-get($mau,trang)
+					text-decoration: none
+					border: 1px solid #68bd40
+					border-radius: 50%
+					font-weight: normal
+					font-size: 0.9375rem
+				&.active,&:hover
+					a,span
+						color: color-get($mau,trang)
+						background: linear-gradient(to right, #4f930c 0%, #66b010 100%)
+.news-detail-page
+	.Module-234,.news-tagline
+		display: none
+	.section-with-line
+		position: static
+	.canhcam-news-2
+		padding-top: 0
+.Module-265
+	.page-banner
+		.list-items 
+			.swiper-wrapper 
+				.swiper-slide 
+					min-height: auto
+.Module-267
+	.nav-product
+		padding-top: 0
+	.canhcam-product
+		h4
+			color: color-get($mau,trang)
+			font-size: 1rem
+			font-weight: 600
+.Module-273
+	.canhcam-product
+		h2
+			color: color-get($mau,trang) !important
+			font-size: 1rem
+			font-weight: 600
+
+.Module-146
+	.swiper-slide
+		@media (max-width: 576px)
+			min-height: 150px !important
+	.title
+		display: none
+
+.Module-261
+	.content
+		padding: 4.5rem 0 0 !important
+	.canhcam-product-detail-1
+		padding: 0 !important
+		.info
+			padding: 3rem 4.2rem 0 !important
+			h2 
+				line-height: initial !important
+			.content
+				padding: 0 !important
+.Module-290
+	.productpager
+		display: none
+		
+
 

@@ -40,6 +40,10 @@
 				display: flex
 				flex-direction: column
 				justify-content: flex-end
+				@media (min-width: 992px)
+					+pos(abs, auto null 65px null)
+				@media (min-width: 1200px)
+					+pos(abs, 0 null 0 null)
 				h3
 					+fz(1.2rem)
 					+fw(300)
@@ -74,10 +78,10 @@
 					figure
 						figcaption
 							+pad(.5rem 0)
-			+media-breakpoint-up(lg)
+			+media-breakpoint-up(xl)
 				.item
 					figure
-						margin-bottom: 0
+						margin-bottom: 17px
 	.news-list
 		margin-top: 0.5rem
 		.item
@@ -98,6 +102,9 @@
 						margin-bottom: 0
 						padding-bottom: 0.8rem
 						border-bottom: 1px dashed #e1e1e1
+						@media (min-width: 576px)
+							min-height: 49px
+							max-height: 49px
 				p 
 					display: flex
 					align-items: center

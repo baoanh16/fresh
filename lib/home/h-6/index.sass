@@ -29,6 +29,9 @@
 				width: 120%
 				transform: translateY(-110%) translateX(-8.5%)
 			+media-breakpoint-up(lg)
+				width: 100%
+				transform: translateY(-125%) translateX(0)
+			+media-breakpoint-up(xl)
 				width: 110%
 				transform: translateY(-110%) translateX(-4.5%)
 		.owl-prev,.owl-next
@@ -64,6 +67,11 @@
 							margin-bottom: 0
 							padding-bottom: 0.8rem
 							border-bottom: 1px dashed #e1e1e1
+							overflow: hidden
+							text-overflow: ellipsis
+							@media (min-width: 576px)
+								min-height: 49px
+								max-height: 49px
 					p 
 						display: flex
 						align-items: center
