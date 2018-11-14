@@ -18,21 +18,13 @@
 
 
 	<xsl:template match="Banner">
-		<div class="swiper-slide">
+		<a class="swiper-slide">
 			<xsl:attribute name="bg-img">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
 			</xsl:attribute>
-			<div class="title">
-				<xsl:value-of select="Title"></xsl:value-of>
-				<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
-				<a class="btn">
-					<xsl:attribute name="href">
+			<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
-					Xem thêm
-					<span class="lnr lnr-arrow-right"></span>
-				</a>
-			</div>
-		</div>
+		</a>
 	</xsl:template>
 </xsl:stylesheet>

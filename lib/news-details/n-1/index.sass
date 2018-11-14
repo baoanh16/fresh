@@ -5,11 +5,11 @@
 .newsdetailpager
 	display: none
 .canhcam-news-details-1
-	+pad(2rem 0)
+	+pad(2rem 0 0)
 	.news-read
 		text-align: start
-		margin-bottom: 2rem
-		
+		@media (max-width: 992px)
+			margin-bottom: 2rem
 		p.lead
 				+fz(0.8125rem)
 				+fw(300)
@@ -107,8 +107,10 @@
 					figure
 						background: none
 						max-height: 80px
+						min-height: 80px
 						margin-bottom: 1rem
 						overflow: hidden
+						align-items: flex-start
 						.thumb
 							display: block
 							height: 100%

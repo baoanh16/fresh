@@ -23,7 +23,6 @@
 				<xsl:attribute name="href">
 					<xsl:value-of select="Url"></xsl:value-of>
 				</xsl:attribute>
-				
 				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 			</a>
 		</li>

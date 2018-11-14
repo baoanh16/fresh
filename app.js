@@ -874,7 +874,8 @@ var swiper = new Swiper('.canhcam-home-2 .swiper-container', {
 });
 
 $(document).ready(function () {
-    baodeptrai();
+    let h = $('.Module-260 img').outerHeight()
+    $('.canhcam-home-2 .swiper-container').css('height', h + '!important')
 });
 
 $(window).resize(function () { });

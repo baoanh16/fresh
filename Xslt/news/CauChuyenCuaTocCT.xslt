@@ -3,35 +3,37 @@
  exclude-result-prefixes="msxsl">
 	<xsl:output method="html" indent="yes" />
 	<xsl:template match="/">
-	<section class="canhcam-news-details-1">
+		<section class="canhcam-news-details-1">
 			<article class="news-details">
-			  <div class="container">
-				<div class="row">
-				  <div class="col-lg-9">
-					<div class="news-read">
-					  <h1><xsl:value-of select="/NewsDetail/Title"></xsl:value-of></h1>
-					  <div class="social-networks nav">
-						<div class="nav-item">
-						  <div class="fb-like" data-action="like" data-href="" data-layout="button_count" data-share="true" data-show-faces="false" data-width="520"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9">
+							<div class="news-read">
+								<h1>
+									<xsl:value-of select="/NewsDetail/Title"></xsl:value-of>
+								</h1>
+								<div class="social-networks nav">
+									<div class="nav-item">
+										<div class="fb-like" data-href="https://www.facebook.com/Freshsangkhoaimoingay/" data-layout="button_count"
+										 data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+									</div>
+								</div>
+								<p class="lead">
+									<xsl:value-of select="/NewsDetail/BriefContent" disable-output-escaping="yes"></xsl:value-of>
+								</p>
+								<div class="content">
+									<p>
+										<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
+									</p>
+								</div>
+								<div class="social-networks nav">
+									<div class="nav-item">
+										<div class="fb-like" data-href="https://www.facebook.com/Freshsangkhoaimoingay/" data-layout="button_count"
+										 data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+									</div>
+								</div>
+							</div>
 						</div>
-					  </div>
-					  <p class="lead">
-						  <xsl:value-of select="/NewsDetail/BriefContent" disable-output-escaping="yes"></xsl:value-of>
-					</p>
-					  <div class="content">
-						  <p>
-							<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of></p>
-					  </div>
-					  <div class="social-networks nav">
-						<div class="nav-item">
-						  <div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="">Chia sẻ</a></div>
-						</div>
-						<div class="nav-item">
-						  <div class="fb-like" data-action="like" data-href="" data-layout="button_count" data-share="false" data-show-faces="false" data-width="520"></div>
-						</div>
-					  </div>
-					</div>
-				  </div>
 						<div class="col-lg-3">
 							<div class="othernews" data-fix="80" data-fix-type="initial" data-fix-change="sticky">
 								<h2 class="section-title">

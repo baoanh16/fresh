@@ -41,14 +41,14 @@
 					<xsl:value-of select="Url"></xsl:value-of>
 				</xsl:attribute>
 				<figure class="row">
-					<div class="img-block col-8">
+					<div class="img-block col-6 col-lg-8">
 						<img class="img-fluid">
 						<xsl:attribute name="src">
 							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
 						</img>
 					</div>
-					<figcaption class="col-4">
+					<figcaption class="col-6 col-lg-4">
 						<h3><xsl:value-of select="Title"></xsl:value-of></h3>
 					</figcaption>
 				</figure>
@@ -60,14 +60,14 @@
 							<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
 						<figure class="row">
-							<div class="img-block col-8">
+							<div class="img-block col-6 col-lg-8">
 								<img class="img-fluid">
 								<xsl:attribute name="src">
 									<xsl:value-of select="ImageUrl"></xsl:value-of>
 								</xsl:attribute>
 								</img>
 							</div>
-							<figcaption class="col-4">
+							<figcaption class="col-6 col-lg-4">
 								<h3><xsl:value-of select="Title"></xsl:value-of></h3>
 							</figcaption>
 						</figure>
@@ -79,14 +79,14 @@
 							<xsl:value-of select="Url"></xsl:value-of>
 						</xsl:attribute>
 						<figure class="row">
-							<div class="img-block col-8">
+							<div class="img-block col-6 col-lg-8">
 								<img class="img-fluid">
 								<xsl:attribute name="src">
 									<xsl:value-of select="ImageUrl"></xsl:value-of>
 								</xsl:attribute>
 								</img>
 							</div>
-							<figcaption class="col-4">
+							<figcaption class="col-6 col-lg-4">
 								<h3><xsl:value-of select="Title"></xsl:value-of></h3>
 							</figcaption>
 						</figure>
